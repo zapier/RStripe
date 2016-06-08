@@ -1,4 +1,4 @@
-#' rstripe.
+#' RStripe.
 #'
 #' @name rstripe
 #' @import RCurl

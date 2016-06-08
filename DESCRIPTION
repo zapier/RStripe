@@ -3,8 +3,8 @@ Title: An API to connect to the stripe payment processor
 Version: 0.1
 Author: Evan Farrell <evandev@gastrograph.com>
 Maintainer: Evan Farrell <evandev@gastrograph.com>
-Description: Provides functions that provide an easy interface to communicate 
-  with Stripe's API.
+Description: Provides functions that provide an easy interface to communicate
+    with Stripe's API.
 Depends:
     R (>= 3.1.1)
 Imports:

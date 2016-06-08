@@ -1,8 +1,9 @@
 Package: RStripe
 Title: An API to connect to the stripe payment processor
 Version: 0.1
-Author: Evan Farrell <evandev@gastrograph.com>
-Maintainer: Evan Farrell <evandev@gastrograph.com>
+Authors@R: c(person("Evan", "Farell", role = c("aut", "cre", "cph"),
+    email = "evandev@gastrograph.com"),
+    person("Russell", "Pierce", role = "ctb", email = "Russell S. Pierce"))
 Description: Provides functions that provide an easy interface to communicate
     with Stripe's API.
 Depends:

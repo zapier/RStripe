@@ -4,7 +4,7 @@
 \alias{stripe_update_coupon}
 \title{Update a coupon.}
 \usage{
-stripe_update_coupon(api_key, coupon_id, args)
+stripe_update_coupon(api_key = stripe_api_key(), coupon_id, args)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

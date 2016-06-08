@@ -4,7 +4,8 @@
 \alias{stripe_retrieve_application_fee_refund}
 \title{Retrieve an existing refund for an Application Fee.}
 \usage{
-stripe_retrieve_application_fee_refund(api_key, application_fee_id, refund_id)
+stripe_retrieve_application_fee_refund(api_key = stripe_api_key(),
+  application_fee_id, refund_id)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

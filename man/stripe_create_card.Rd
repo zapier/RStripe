@@ -4,7 +4,7 @@
 \alias{stripe_create_card}
 \title{Add a credit card to Stripe.}
 \usage{
-stripe_create_card(api_key, customer_id, args)
+stripe_create_card(api_key = stripe_api_key(), customer_id, args)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

@@ -4,7 +4,8 @@
 \alias{stripe_retrieve_subscription}
 \title{Retrieve a Subscription}
 \usage{
-stripe_retrieve_subscription(api_key, customer_id, subscription_id)
+stripe_retrieve_subscription(api_key = stripe_api_key(), customer_id,
+  subscription_id)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

@@ -4,7 +4,7 @@
 \alias{stripe_retrieve_recipient}
 \title{Retrieve information on a recipient.}
 \usage{
-stripe_retrieve_recipient(api_key, recipient_id)
+stripe_retrieve_recipient(api_key = stripe_api_key(), recipient_id)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

@@ -1,18 +1,18 @@
 # --------------------------------------------------
 # Helper Functions
 # --------------------------------------------------
-.post <- function(api_key, link, args=NULL) {
+.post <- function(api_key = stripe_api_key(), link, args=NULL) {
     res <- POST(url = link, config=add_headers(Authorization=paste0("Bearer  ", api_key)),
                      body=args, encode="form")
     content(res)
 }
 
-.get <- function(api_key, link) {
+.get <- function(api_key = stripe_api_key(), link) {
     res <- getURL(link, userpwd=paste0(api_key, ":"))
     fromJSON(res)
 }
 
-.delete <- function(api_key, link) {
+.delete <- function(api_key = stripe_api_key(), link) {
     res <- DELETE(url=link,config=add_headers(Authorization=paste0("Bearer ", api_key)))
     content(res)
 }

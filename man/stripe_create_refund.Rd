@@ -4,7 +4,7 @@
 \alias{stripe_create_refund}
 \title{Create a Refund}
 \usage{
-stripe_create_refund(api_key, charge_id, args = NULL)
+stripe_create_refund(api_key = stripe_api_key(), charge_id, args = NULL)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

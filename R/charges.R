@@ -31,7 +31,7 @@
 #'
 #' @export
 #'
-stripe_create_charge <- function(api_key,args) {
+stripe_create_charge <- function(api_key = stripe_api_key(),args) {
     args <- .downcase(args, FALSE)
     args <- .downcase(args, TRUE)
     args <- .card(args)
@@ -54,7 +54,7 @@ stripe_create_charge <- function(api_key,args) {
 #'
 #' @export
 #'
-stripe_retrieve_charge <- function(api_key, charge_id) {
+stripe_retrieve_charge <- function(api_key = stripe_api_key(), charge_id) {
     link <- paste0("https://api.stripe.com/v1/charges/", charge_id)
     .get(api_key, link)
 }
@@ -81,7 +81,7 @@ stripe_retrieve_charge <- function(api_key, charge_id) {
 #'
 #' @export
 #'
-stripe_update_charge <- function(api_key, charge_id, args) {
+stripe_update_charge <- function(api_key = stripe_api_key(), charge_id, args) {
     if(!is.null(args["description"]) | !is.null(args["metadata"])) {
         args <- .metadata(args)
         link <- paste0("https://api.stripe.com/v1/charges/", charge_id)
@@ -110,7 +110,7 @@ stripe_update_charge <- function(api_key, charge_id, args) {
 #'
 #' @export
 #'
-stripe_capture_charge <- function(api_key, charge_id, args=NULL) {
+stripe_capture_charge <- function(api_key = stripe_api_key(), charge_id, args=NULL) {
     link <- paste0("https://api.stripe.com/v1/charges/",charge_id, "/capture")
     .post(api_key, link, args)
 }
@@ -133,7 +133,7 @@ stripe_capture_charge <- function(api_key, charge_id, args=NULL) {
 #'
 #' @export
 #'
-stripe_list_charges <- function(api_key, args=NULL) {
+stripe_list_charges <- function(api_key = stripe_api_key(), args=NULL) {
     args <- .convert_to_url(args)
     link <- paste0("https://api.stripe.com/v1/charges",args)
     .get(api_key, link)

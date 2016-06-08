@@ -4,7 +4,7 @@
 \alias{stripe_retrieve_card}
 \title{Retrieve a card from a customer}
 \usage{
-stripe_retrieve_card(api_key, card_id, customer_id)
+stripe_retrieve_card(api_key = stripe_api_key(), card_id, customer_id)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

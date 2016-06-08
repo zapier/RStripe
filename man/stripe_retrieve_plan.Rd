@@ -4,7 +4,7 @@
 \alias{stripe_retrieve_plan}
 \title{Retrieve a Plan}
 \usage{
-stripe_retrieve_plan(api_key, plan_id)
+stripe_retrieve_plan(api_key = stripe_api_key(), plan_id)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

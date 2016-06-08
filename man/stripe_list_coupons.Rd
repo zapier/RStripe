@@ -4,7 +4,7 @@
 \alias{stripe_list_coupons}
 \title{List all coupons.}
 \usage{
-stripe_list_coupons(api_key, args = NULL)
+stripe_list_coupons(api_key = stripe_api_key(), args = NULL)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

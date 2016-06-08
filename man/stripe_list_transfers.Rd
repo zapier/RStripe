@@ -4,7 +4,7 @@
 \alias{stripe_list_transfers}
 \title{List Transfers.}
 \usage{
-stripe_list_transfers(api_key, args = NULL)
+stripe_list_transfers(api_key = stripe_api_key(), args = NULL)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

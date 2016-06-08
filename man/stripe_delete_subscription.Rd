@@ -4,7 +4,8 @@
 \alias{stripe_delete_subscription}
 \title{Delete a subscription on Stripe.}
 \usage{
-stripe_delete_subscription(api_key, customer_id, subscription_id)
+stripe_delete_subscription(api_key = stripe_api_key(), customer_id,
+  subscription_id)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

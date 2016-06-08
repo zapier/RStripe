@@ -4,7 +4,7 @@
 \alias{stripe_update_invoice_item}
 \title{Update an Invoice Item.}
 \usage{
-stripe_update_invoice_item(api_key, item_id, args)
+stripe_update_invoice_item(api_key = stripe_api_key(), item_id, args)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

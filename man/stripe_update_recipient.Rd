@@ -4,7 +4,7 @@
 \alias{stripe_update_recipient}
 \title{Update a recipient on Stripe.}
 \usage{
-stripe_update_recipient(api_key, recipient_id, args)
+stripe_update_recipient(api_key = stripe_api_key(), recipient_id, args)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

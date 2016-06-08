@@ -4,7 +4,8 @@
 \alias{stripe_update_subscription}
 \title{Update a subscription.}
 \usage{
-stripe_update_subscription(api_key, customer_id, subscription_id, args)
+stripe_update_subscription(api_key = stripe_api_key(), customer_id,
+  subscription_id, args)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

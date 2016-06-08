@@ -4,7 +4,7 @@
 \alias{stripe_create_invoice_item}
 \title{Create an Invoice Item.}
 \usage{
-stripe_create_invoice_item(api_key, args)
+stripe_create_invoice_item(api_key = stripe_api_key(), args)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

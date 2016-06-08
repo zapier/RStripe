@@ -4,7 +4,8 @@
 \alias{stripe_retrieve_application_fee}
 \title{Retrieve an Application Fee.}
 \usage{
-stripe_retrieve_application_fee(api_key, application_fee_id)
+stripe_retrieve_application_fee(api_key = stripe_api_key(),
+  application_fee_id)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

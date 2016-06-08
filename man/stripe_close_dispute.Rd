@@ -4,7 +4,7 @@
 \alias{stripe_close_dispute}
 \title{Close a dispute.}
 \usage{
-stripe_close_dispute(api_key, charge_id)
+stripe_close_dispute(api_key = stripe_api_key(), charge_id)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

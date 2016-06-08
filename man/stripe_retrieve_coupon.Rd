@@ -4,7 +4,7 @@
 \alias{stripe_retrieve_coupon}
 \title{Retrieve a coupon.}
 \usage{
-stripe_retrieve_coupon(api_key, coupon_id)
+stripe_retrieve_coupon(api_key = stripe_api_key(), coupon_id)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

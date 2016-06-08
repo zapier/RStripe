@@ -4,7 +4,7 @@
 \alias{stripe_retrieve_invoice}
 \title{Retrieve an Invoice.}
 \usage{
-stripe_retrieve_invoice(api_key, invoice_id)
+stripe_retrieve_invoice(api_key = stripe_api_key(), invoice_id)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

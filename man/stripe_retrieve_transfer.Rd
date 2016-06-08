@@ -4,7 +4,7 @@
 \alias{stripe_retrieve_transfer}
 \title{Retrieve a transfer}
 \usage{
-stripe_retrieve_transfer(api_key, transfer_id)
+stripe_retrieve_transfer(api_key = stripe_api_key(), transfer_id)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

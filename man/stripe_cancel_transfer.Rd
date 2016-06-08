@@ -4,7 +4,7 @@
 \alias{stripe_cancel_transfer}
 \title{Cancel a transfer on Stripe.}
 \usage{
-stripe_cancel_transfer(api_key, transfer_id)
+stripe_cancel_transfer(api_key = stripe_api_key(), transfer_id)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

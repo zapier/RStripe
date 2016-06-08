@@ -4,7 +4,7 @@
 \alias{stripe_delete_customer}
 \title{Delete a Customer.}
 \usage{
-stripe_delete_customer(api_key, customer_id)
+stripe_delete_customer(api_key = stripe_api_key(), customer_id)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

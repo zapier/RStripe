@@ -4,7 +4,7 @@
 \alias{stripe_pay_invoice}
 \title{Pay an Invoice.}
 \usage{
-stripe_pay_invoice(api_key, invoice_id)
+stripe_pay_invoice(api_key = stripe_api_key(), invoice_id)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

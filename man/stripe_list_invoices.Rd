@@ -4,7 +4,7 @@
 \alias{stripe_list_invoices}
 \title{List Invoices.}
 \usage{
-stripe_list_invoices(api_key, args = NULL)
+stripe_list_invoices(api_key = stripe_api_key(), args = NULL)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

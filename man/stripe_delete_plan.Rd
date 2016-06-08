@@ -4,7 +4,7 @@
 \alias{stripe_delete_plan}
 \title{Delete a plan on Stripe.}
 \usage{
-stripe_delete_plan(api_key, plan_id)
+stripe_delete_plan(api_key = stripe_api_key(), plan_id)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

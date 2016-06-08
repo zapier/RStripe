@@ -23,7 +23,7 @@
 #'
 #' @export
 #'
-stripe_create_invoice_item <- function(api_key, args) {
+stripe_create_invoice_item <- function(api_key = stripe_api_key(), args) {
     args <- .metadata(args)
     link <- paste0("https://api.stripe.com/v1/invoiceitems")
     .post(api_key, link, args)
@@ -41,7 +41,7 @@ stripe_create_invoice_item <- function(api_key, args) {
 #'
 #' @export
 #'
-stripe_retrieve_invoice_item <- function(api_key, item_id) {
+stripe_retrieve_invoice_item <- function(api_key = stripe_api_key(), item_id) {
     link <- paste0("https://api.stripe.com/v1/invoiceitems/", item_id)
     .get(api_key, link)
 }
@@ -65,7 +65,7 @@ stripe_retrieve_invoice_item <- function(api_key, item_id) {
 #'
 #' @export
 #'
-stripe_update_invoice_item <- function(api_key, item_id, args) {
+stripe_update_invoice_item <- function(api_key = stripe_api_key(), item_id, args) {
     args <- .metadata(args)
     link <- paste0("https://api.stripe.com/v1/invoiceitems/", item_id)
     .post(api_key, link, args)
@@ -83,7 +83,7 @@ stripe_update_invoice_item <- function(api_key, item_id, args) {
 #'
 #' @export
 #'
-stripe_delete_invoice_item <- function(api_key, item_id) {
+stripe_delete_invoice_item <- function(api_key = stripe_api_key(), item_id) {
     link <- paste0("https://api.stripe.com/v1/invoiceitems/", item_id)
     .delete(api_key, link)
 }
@@ -105,7 +105,7 @@ stripe_delete_invoice_item <- function(api_key, item_id) {
 #' @return A data frame with the the invoice items if successful.
 #' @export
 #'
-stripe_list_invoice_items <- function(api_key, args=NULL) {
+stripe_list_invoice_items <- function(api_key = stripe_api_key(), args=NULL) {
     args <- .convert_to_url(args)
     link <- paste0("https://api.stripe.com/v1/invoiceitems", args)
     .get(api_key, link)

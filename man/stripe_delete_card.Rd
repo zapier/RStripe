@@ -4,7 +4,7 @@
 \alias{stripe_delete_card}
 \title{Delete a credit card on Stripe.}
 \usage{
-stripe_delete_card(api_key, customer_id, card_id)
+stripe_delete_card(api_key = stripe_api_key(), customer_id, card_id)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

@@ -4,7 +4,8 @@
 \alias{stripe_create_application_fee_refund}
 \title{Create a refund for an Application Fee.}
 \usage{
-stripe_create_application_fee_refund(api_key, application_fee_id, args = NULL)
+stripe_create_application_fee_refund(api_key = stripe_api_key(),
+  application_fee_id, args = NULL)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

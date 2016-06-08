@@ -4,7 +4,7 @@
 \alias{stripe_list_plans}
 \title{List Plans.}
 \usage{
-stripe_list_plans(api_key, args = NULL)
+stripe_list_plans(api_key = stripe_api_key(), args = NULL)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

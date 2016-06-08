@@ -4,7 +4,7 @@
 \alias{stripe_create_recipient}
 \title{Add a recipient to Stripe.}
 \usage{
-stripe_create_recipient(api_key, args)
+stripe_create_recipient(api_key = stripe_api_key(), args)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

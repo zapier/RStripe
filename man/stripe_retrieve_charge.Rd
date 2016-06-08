@@ -4,7 +4,7 @@
 \alias{stripe_retrieve_charge}
 \title{Retrieve a charge.}
 \usage{
-stripe_retrieve_charge(api_key, charge_id)
+stripe_retrieve_charge(api_key = stripe_api_key(), charge_id)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

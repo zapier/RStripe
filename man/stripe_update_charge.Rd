@@ -4,7 +4,7 @@
 \alias{stripe_update_charge}
 \title{Update a charge.}
 \usage{
-stripe_update_charge(api_key, charge_id, args)
+stripe_update_charge(api_key = stripe_api_key(), charge_id, args)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

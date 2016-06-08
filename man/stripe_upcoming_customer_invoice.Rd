@@ -4,7 +4,7 @@
 \alias{stripe_upcoming_customer_invoice}
 \title{Retrieve upcoming customer's invoice.}
 \usage{
-stripe_upcoming_customer_invoice(api_key, customer_id)
+stripe_upcoming_customer_invoice(api_key = stripe_api_key(), customer_id)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

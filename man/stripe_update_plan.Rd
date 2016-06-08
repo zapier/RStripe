@@ -4,7 +4,7 @@
 \alias{stripe_update_plan}
 \title{Update a Plan}
 \usage{
-stripe_update_plan(api_key, plan_id, args)
+stripe_update_plan(api_key = stripe_api_key(), plan_id, args)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

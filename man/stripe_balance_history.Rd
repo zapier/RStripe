@@ -4,7 +4,7 @@
 \alias{stripe_balance_history}
 \title{Retrieve a Stripe Account Balance History.}
 \usage{
-stripe_balance_history(api_key, args = NULL)
+stripe_balance_history(api_key = stripe_api_key(), args = NULL)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

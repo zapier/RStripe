@@ -26,7 +26,7 @@
 #'
 #' @export
 #'
-stripe_create_customer <- function(api_key, args=NULL) {
+stripe_create_customer <- function(api_key = stripe_api_key(), args=NULL) {
     args <- .card(args)
     args <- .metadata(args)
     link <- "https://api.stripe.com/v1/customers"
@@ -45,7 +45,7 @@ stripe_create_customer <- function(api_key, args=NULL) {
 #'
 #' @export
 #'
-stripe_retrieve_customer <- function(api_key, customer_id) {
+stripe_retrieve_customer <- function(api_key = stripe_api_key(), customer_id) {
     link <- paste0("https://api.stripe.com/v1/customers/",customer_id)
     .get(api_key, link)
 }
@@ -74,7 +74,7 @@ stripe_retrieve_customer <- function(api_key, customer_id) {
 #'
 #' @export
 #'
-stripe_update_customer <- function(api_key, customer_id, args) {
+stripe_update_customer <- function(api_key = stripe_api_key(), customer_id, args) {
     args <- .card(args)
     args <- .metadata(args)
     link <- paste0("https://api.stripe.com/v1/customers/", customer_id)
@@ -93,7 +93,7 @@ stripe_update_customer <- function(api_key, customer_id, args) {
 #'
 #' @export
 #'
-stripe_delete_customer <- function(api_key, customer_id) {
+stripe_delete_customer <- function(api_key = stripe_api_key(), customer_id) {
     link <- paste0("https://api.stripe.com/v1/customers/",customer_id)
     .delete(api_key, link)
 }
@@ -115,7 +115,7 @@ stripe_delete_customer <- function(api_key, customer_id) {
 #'
 #' @export
 #'
-stripe_list_customers <- function(api_key, args=NULL) {
+stripe_list_customers <- function(api_key = stripe_api_key(), args=NULL) {
     args <- .convert_to_url(args)
     link <- paste0("https://api.stripe.com/v1/customers", args)
     .get(api_key, link)

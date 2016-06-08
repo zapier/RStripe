@@ -4,8 +4,8 @@
 \alias{stripe_update_application_fee_refund}
 \title{Update a refund for an Application Fee.}
 \usage{
-stripe_update_application_fee_refund(api_key, application_fee_id, refund_id,
-  args)
+stripe_update_application_fee_refund(api_key = stripe_api_key(),
+  application_fee_id, refund_id, args)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

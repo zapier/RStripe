@@ -4,7 +4,7 @@
 \alias{stripe_create_coupon}
 \title{Create a coupon.}
 \usage{
-stripe_create_coupon(api_key, args)
+stripe_create_coupon(api_key = stripe_api_key(), args)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

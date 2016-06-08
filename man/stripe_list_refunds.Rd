@@ -4,7 +4,7 @@
 \alias{stripe_list_refunds}
 \title{List Refunds}
 \usage{
-stripe_list_refunds(api_key, charge_id, args = NULL)
+stripe_list_refunds(api_key = stripe_api_key(), charge_id, args = NULL)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

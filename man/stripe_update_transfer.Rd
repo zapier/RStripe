@@ -4,7 +4,7 @@
 \alias{stripe_update_transfer}
 \title{Update a Transfer}
 \usage{
-stripe_update_transfer(api_key, transfer_id, args)
+stripe_update_transfer(api_key = stripe_api_key(), transfer_id, args)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

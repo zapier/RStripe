@@ -4,7 +4,7 @@
 \alias{stripe_list_cards}
 \title{List credit card on customers.}
 \usage{
-stripe_list_cards(api_key, customer_id, args = NULL)
+stripe_list_cards(api_key = stripe_api_key(), customer_id, args = NULL)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

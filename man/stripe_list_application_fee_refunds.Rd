@@ -4,7 +4,8 @@
 \alias{stripe_list_application_fee_refunds}
 \title{List all refunds for an Application Fee.}
 \usage{
-stripe_list_application_fee_refunds(api_key, application_fee_id, args = NULL)
+stripe_list_application_fee_refunds(api_key = stripe_api_key(),
+  application_fee_id, args = NULL)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

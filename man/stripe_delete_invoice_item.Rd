@@ -4,7 +4,7 @@
 \alias{stripe_delete_invoice_item}
 \title{Delete an Invoice Item.}
 \usage{
-stripe_delete_invoice_item(api_key, item_id)
+stripe_delete_invoice_item(api_key = stripe_api_key(), item_id)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

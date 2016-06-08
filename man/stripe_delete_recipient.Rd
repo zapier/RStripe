@@ -4,7 +4,7 @@
 \alias{stripe_delete_recipient}
 \title{Delete a recipient on Stripe.}
 \usage{
-stripe_delete_recipient(api_key, recipient_id)
+stripe_delete_recipient(api_key = stripe_api_key(), recipient_id)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

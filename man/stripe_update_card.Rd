@@ -4,7 +4,7 @@
 \alias{stripe_update_card}
 \title{Update a credit card on Stripe.}
 \usage{
-stripe_update_card(api_key, customer_id, card_id, args)
+stripe_update_card(api_key = stripe_api_key(), customer_id, card_id, args)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

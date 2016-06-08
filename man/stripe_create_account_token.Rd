@@ -4,7 +4,7 @@
 \alias{stripe_create_account_token}
 \title{Create a Bank Account Token}
 \usage{
-stripe_create_account_token(api_key, args)
+stripe_create_account_token(api_key = stripe_api_key(), args)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

@@ -4,7 +4,7 @@
 \alias{stripe_create_transfer}
 \title{Create a transfer to Stripe.}
 \usage{
-stripe_create_transfer(api_key, args)
+stripe_create_transfer(api_key = stripe_api_key(), args)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

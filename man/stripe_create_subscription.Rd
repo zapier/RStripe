@@ -4,7 +4,7 @@
 \alias{stripe_create_subscription}
 \title{Create a Subscription}
 \usage{
-stripe_create_subscription(api_key, customer_id, args)
+stripe_create_subscription(api_key = stripe_api_key(), customer_id, args)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

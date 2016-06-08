@@ -4,7 +4,7 @@
 \alias{stripe_list_application_fees}
 \title{List all Application Fees.}
 \usage{
-stripe_list_application_fees(api_key, args = NULL)
+stripe_list_application_fees(api_key = stripe_api_key(), args = NULL)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

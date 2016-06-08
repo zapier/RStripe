@@ -4,7 +4,8 @@
 \alias{stripe_retrieve_balance_transaction}
 \title{Retrieve a Stripe Account Balance transaction.}
 \usage{
-stripe_retrieve_balance_transaction(api_key, transaction_id)
+stripe_retrieve_balance_transaction(api_key = stripe_api_key(),
+  transaction_id)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

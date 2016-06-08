@@ -4,7 +4,7 @@
 \alias{stripe_create_plan}
 \title{Create a Plan}
 \usage{
-stripe_create_plan(api_key, args)
+stripe_create_plan(api_key = stripe_api_key(), args)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

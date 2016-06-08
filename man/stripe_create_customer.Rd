@@ -4,7 +4,7 @@
 \alias{stripe_create_customer}
 \title{Create a Customer.}
 \usage{
-stripe_create_customer(api_key, args = NULL)
+stripe_create_customer(api_key = stripe_api_key(), args = NULL)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}

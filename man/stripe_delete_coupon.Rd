@@ -4,7 +4,7 @@
 \alias{stripe_delete_coupon}
 \title{Delete a coupon.}
 \usage{
-stripe_delete_coupon(api_key, coupon_id)
+stripe_delete_coupon(api_key = stripe_api_key(), coupon_id)
 }
 \arguments{
 \item{api_key}{Your Stripe API Key}
